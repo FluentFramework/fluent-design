@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FluentFramework/fluent-ui.git"
+    "url": "git+https://github.com/FluentFramework/fluent-design.git"
   },
   "keywords": [
     "fluent"
