@@ -1,6 +1,6 @@
 {
   "name": "fluent-design",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a ui framework based on fluent design system",
   "main": "index.js",
   "scripts": {
