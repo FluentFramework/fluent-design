@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/FluentFramework/fluent-ui/issues"
   },
-  "homepage": "https://github.com/FluentFramework/fluent-ui#readme"
+  "homepage": "https://github.com/FluentFramework/fluent-ui#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-stylus": "^2.6.0"
+  }
 }
