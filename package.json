@@ -1,0 +1,22 @@
+{
+  "name": "fluent-design",
+  "version": "0.0.0",
+  "description": "a ui framework based on fluent design system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluentFramework/fluent-ui.git"
+  },
+  "keywords": [
+    "fluent"
+  ],
+  "author": "fuling,kokororin,kirainmoe,cdog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FluentFramework/fluent-ui/issues"
+  },
+  "homepage": "https://github.com/FluentFramework/fluent-ui#readme"
+}
