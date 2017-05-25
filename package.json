@@ -2,8 +2,10 @@
   "name": "fluent-design",
   "version": "0.0.1",
   "description": "a ui framework based on fluent design system",
-  "main": "index.js",
+  "main": "lib/css/fluent-design.css",
   "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,15 +16,19 @@
     "fluent"
   ],
   "author": "fuling,kokororin,kirainmoe,cdog",
+  "organization": "MoeFront Studio",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FluentFramework/fluent-ui/issues"
   },
   "homepage": "https://github.com/FluentFramework/fluent-ui#readme",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp-stylus": "^2.6.0"
+    "gulp": "^3.9.1",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglifycss": "^1.0.8",
+    "run-sequence": "^1.2.2"
   }
 }
