@@ -2,11 +2,11 @@ const gulp = require('gulp');
 const stylus = require('gulp-stylus');
 
 gulp.task('to-css', function () {
-    return gulp.src('./stylus/fluent-design.styl')
+    return gulp.src('./src/fluent-design.styl')
         .pipe(stylus())
-        .pipe(gulp.dest('./build/css'));
+        .pipe(gulp.dest('./lib/css'));
 });
 gulp.task('watch', function () {
     // watch source
-    gulp.watch('./stylus/**/*.styl', ['to-css'])
+    gulp.watch('./src/**/*.styl', ['to-css'])
 });
