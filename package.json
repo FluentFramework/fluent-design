@@ -23,7 +23,10 @@
     "url": "https://github.com/FluentFramework/fluent-ui/issues"
   },
   "homepage": "https://github.com/FluentFramework/fluent-ui#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.8",
