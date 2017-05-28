@@ -26,11 +26,11 @@ const opts = {
     ].join('\n')
 };
 
-gulp.task('default', function() {
+gulp.task('default', function () {
     runSequence('to-css', 'add-header');
 });
 
-gulp.task('to-css', function() {
+gulp.task('to-css', function () {
     return gulp.src('./src/fluent-design.styl')
         .pipe(stylus())
         .pipe(gulp.dest(opts.destPath))
@@ -39,12 +39,12 @@ gulp.task('to-css', function() {
         .pipe(gulp.dest(opts.destPath));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
     // watch source
     gulp.watch('./src/**/*.styl', ['to-css'])
 });
 
-gulp.task('add-header', function() {
+gulp.task('add-header', function () {
     return gulp.src(`${opts.destPath}/*.css`)
         .pipe(header(opts.banner, pkg))
         .pipe(gulp.dest(opts.destPath));

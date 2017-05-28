@@ -3,6 +3,8 @@ const webpack = require('webpack');
 module.exports = {
     entry: {
         index: [
+            'webpack-dev-server/client?http://localhost:2333',
+            'webpack/hot/only-dev-server',
             './src/fluent-design.js'
         ]
     },
@@ -28,6 +30,10 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.js', '.json', '.scss']
-    }
+        extensions: ['.js', '.json', '.styl']
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoEmitOnErrorsPlugin()
+    ]
 }
