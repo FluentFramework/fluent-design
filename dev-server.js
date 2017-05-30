@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
 new WebpackDevServer(webpack(config), {
+    // contentBase: "./",
     publicPath: config.output.publicPath,
     hot: true,
     stats: {
@@ -15,4 +16,5 @@ new WebpackDevServer(webpack(config), {
     }
     console.log('Listening at localhost:2333');
     console.log('Pleae wait');
+
 });

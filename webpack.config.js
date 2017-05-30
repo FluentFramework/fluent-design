@@ -10,7 +10,8 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'lib')
+        path: path.resolve(__dirname, 'lib'),
+        publicPath: '/lib'
     },
     module: {
         loaders: [
@@ -18,11 +19,16 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader'
             },
+            // {
+            //     test: /\.js$/,
+            //     loader: 'babel-loader'
+            // },
             {
-                test: /\.js$/,
-                loaders: ['react-hot-loader', 'babel-loader']
-            },
-           
+                test: /\.js?$/,
+                loaders: ['babel-loader'],
+                include: path.join(__dirname, 'src')
+            }
+
         ]
     },
     resolve: {

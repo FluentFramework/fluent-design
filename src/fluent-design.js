@@ -1,17 +1,23 @@
+import 'react-hot-loader/patch';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import Hello from './components/Hello';
 
-export class Hello extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Hello!!@!</h1>
-            </div>
-        )
-    }
+ReactDOM.render((
+    <AppContainer>
+        <Hello />
+    </AppContainer>
+), document.getElementById('root'));
+
+if (module.hot) {
+  module.hot.accept('./components/Hello', () => {
+    const NextRootContainer = require('./components/Hello').default;
+
+    ReactDOM.render((
+      <AppContainer>
+        <NextRootContainer />
+      </AppContainer>
+    ), document.getElementById('root'));
+  })
 }
-
-ReactDOM.render(
-    <Hello />,
-    document.getElementById('root')
-);
