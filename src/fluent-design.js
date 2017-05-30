@@ -1,7 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+export class Hello extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>Hello!!@!</h1>
+            </div>
+        )
+    }
+}
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
+    <Hello />,
+    document.getElementById('root')
 );

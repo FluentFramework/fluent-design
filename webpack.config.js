@@ -20,13 +20,9 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                loaders: ['react-hot-loader', 'babel-loader']
             },
-            {
-                test: /\.js|jsx$/,
-                loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=react,presets[]=stage-0'],
-                include: path.join(__dirname, 'js'),
-            }
+           
         ]
     },
     resolve: {
