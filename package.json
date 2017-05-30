@@ -2,8 +2,11 @@
   "name": "fluent-design",
   "version": "0.0.1",
   "description": "a ui framework based on fluent design system",
-  "main": "index.js",
+  "main": "lib/css/fluent-design.css",
   "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
+    "dev": "node dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,15 +17,34 @@
     "fluent"
   ],
   "author": "fuling,kokororin,kirainmoe,cdog",
+  "organization": "MoeFront Studio",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FluentFramework/fluent-ui/issues"
   },
   "homepage": "https://github.com/FluentFramework/fluent-ui#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "gulp-stylus": "^2.6.0"
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "gulp": "^3.9.1",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglifycss": "^1.0.8",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "run-sequence": "^1.2.2",
+    "style-loader": "^0.18.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
