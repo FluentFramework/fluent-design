@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+
 module.exports = {
     entry: {
         index: [
@@ -27,8 +28,11 @@ module.exports = {
                 test: /\.js?$/,
                 loaders: ['babel-loader'],
                 include: path.join(__dirname, 'src')
+            },
+            {
+                test: /\.styl$/,
+                loader: 'css-loader!stylus-loader?paths=node_modules/bootstrap-stylus/stylus/'
             }
-
         ]
     },
     resolve: {

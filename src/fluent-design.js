@@ -2,17 +2,17 @@ import 'react-hot-loader/patch';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Hello from './components/Hello';
+import RootContainer from './components/RootContainer';
 
 ReactDOM.render((
     <AppContainer>
-        <Hello />
+        <RootContainer />
     </AppContainer>
 ), document.getElementById('root'));
 
 if (module.hot) {
-  module.hot.accept('./components/Hello', () => {
-    const NextRootContainer = require('./components/Hello').default;
+  module.hot.accept('./components/RootContainer', () => {
+    const NextRootContainer = require('./components/RootContainer').default;
 
     ReactDOM.render((
       <AppContainer>
